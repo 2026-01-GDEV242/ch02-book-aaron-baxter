@@ -12,6 +12,7 @@ class Book
     private String author;
     private String title;
     public int pages;
+    public String refNumber;
 
     /**
      * Set the author and title fields when this object
@@ -22,6 +23,7 @@ class Book
         author = bookAuthor;
         title = bookTitle;
         pages = bookPages;
+        refNumber = "";
     }
 
     // Add the methods here ...
@@ -34,6 +36,20 @@ class Book
     {
         return title;
     }
+    //Part of Exercise 2.85
+    public int getPages()
+    {
+        return pages;
+    }
+    //Exercise 2.88
+    public String getRefNumber()
+    {
+        return refNumber;
+    }
+    public void setRefNumber(String ref)
+    {
+        refNumber = ref;
+    }
     //Exercise 2.84
     public void printAuthor()
     {
@@ -43,13 +59,11 @@ class Book
     {
         System.out.println("Title: " + title);
     }
-    /* Exercise 2.86
-    Immutability means that the properties cannot be updated. Yes, these properties are immutable.
-    */
+    //Exercise 2.86 - Immutability means that the properties cannot be updated. Yes, these properties are immutable.
     //Exercise 2.87
     public void printDetails()
     {
         System.out.println("Title: " + title + ", Author: " + author
                                     + ", Pages: " + pages);
-    }
+    }    
 }
