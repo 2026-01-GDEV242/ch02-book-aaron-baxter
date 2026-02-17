@@ -39,7 +39,17 @@ class Book
     {
         System.out.println("Author: " + author);
     }
-    public void printTitle() {
+    public void printTitle() 
+    {
         System.out.println("Title: " + title);
+    }
+    /* Exercise 2.86
+    Immutability means that the properties cannot be updated. Yes, these properties are immutable.
+    */
+    //Exercise 2.87
+    public void printDetails()
+    {
+        System.out.println("Title: " + title + ", Author: " + author
+                                    + ", Pages: " + pages);
     }
 }
