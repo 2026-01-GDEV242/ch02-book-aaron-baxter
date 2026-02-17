@@ -65,5 +65,14 @@ class Book
     {
         System.out.println("Title: " + title + ", Author: " + author
                                     + ", Pages: " + pages);
-    }    
+    
+        if (refNumber.length() > 0)
+        {
+            System.out.println("Reference number: " + refNumber);
+        }
+        else
+        {
+            System.out.println("ZZZ");
+        }                        
+    }
 }
